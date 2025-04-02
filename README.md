@@ -9,6 +9,7 @@ A simple Rock, Paper, Scissors game.
 - The user can choose between `Rock`, `Paper`, or `Scissors`.
 - The computer randomly selects one as well, and the outcome is determined.
 - Scores are updated automatically.
+- A Reset button resets the scores to 0.
 - A `Dark Mode` feature is included, allowing the user to toggle the theme.
 
 ## 🌐 Website
