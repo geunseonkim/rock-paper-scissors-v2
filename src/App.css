@@ -1,30 +1,119 @@
 .box {
   border: 3px solid black;
-  width: 30vw;
+  width: 25vw;
+  height: auto;
+  min-height: 59vh;
   margin-left: 10px;
+  padding: 15px;
+}
+
+.WIN {
+  border: 3px solid green;
+}
+
+.LOSE {
+  border: 3px solid red;
 }
 
 .item-img {
-  width: 25vw;
+  width: 20vw;
 }
 
 .container {
   text-align: center;
+  height: 100vh;
+}
+
+.container h1 {
+  margin-top: 0px;
+  padding-top: 30px;
 }
 
 .contents {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+}
+
+.contents-score div p {
+  margin-left: 10px;
+  font-size: 20px;
 }
 
 .item-btn button {
-  padding: 5px;
+  padding: 5px 9px;
   border: 1px solid black;
   border-radius: 5px;
   background-color: white;
   margin: 5px;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 15px;
+  cursor: pointer;
+}
+
+.item-btn button:hover {
+  background-color: black;
+  color: white;
+}
+
+.item-btn-score button {
+  font-size: 15px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode-toggle button {
+  padding: 4px 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: gray;
+  color: white;
+}
+
+.dark-mode-toggle button:hover {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode-btn button {
+  border: 1px solid white;
+}
+
+@media (max-width: 600px) {
+  .box {
+    min-height: 34vh;
+  }
+  /* .contents-score {
+    flex-direction: column;
+  } */
+  .box h2 {
+    font-size: 18px;
+  }
+  .item-img {
+    width: 25vw;
+  }
+  .contents-score div p {
+    font-size: 18px;
+  }
+  .item-btn-score button {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 991px) {
+  .box {
+    min-height: 45vh;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .box {
+    min-height: 52vh;
+  }
 }
